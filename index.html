@@ -1,10 +1,10 @@
-<!doctype html>
+ï»¿<!doctype html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>SNÖ</title>
-    <style>
+    <title>SNO</title>
+   <style>
     * {
   margin: 0;
   padding: 0;
@@ -18,15 +18,18 @@ canvas {
     </style>
   </head>
   <body>
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
     <script type='text/javascript'>
   var Module = {
     TOTAL_MEMORY: 268435456,
     errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
-    dataUrl: "Release/EndlessOutrider.data",
-    codeUrl: "Release/EndlessOutrider.js",
-    memUrl: "Release/EndlessOutrider.mem",
+    backgroundColor: "#FFFFFF",
+    splashStyle: "Dark",
+    dataUrl: "Release/SNO_web.data",
+    codeUrl: "Release/SNO_web.js",
+    asmUrl: "Release/SNO_web.asm.js",
+    memUrl: "Release/SNO_web.mem",
   };
 </script>
 <script src="Release/UnityLoader.js"></script>
